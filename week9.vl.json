@@ -1,0 +1,43 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "width": 800,
+  "height": 500,
+  "title": "Airline passengers at 20 major Australian airports - Dec 2007",
+  "projection": {"type": "equirectangular"},
+  "layer": [
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/alwaysblazing/Australia-State-TopoJson-MapChart/master/au-states-topo.json",
+        "format": {"type": "topojson", "feature": "austates"}
+      },
+      "mark": {"type": "geoshape", "fill": "lightgray", "stroke": "white"}
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/jrat0002/Week-9-Homework/main/mon_pax_web.csv"
+      },
+      "encoding": {
+        "longitude": {"field": "Longitude", "type": "quantitative"},
+        "latitude": {"field": "Latitude", "type": "quantitative"}
+      },
+      "layer": [
+        {
+          "mark": {"type": "circle", "tooltip": {"content": "data"}},
+          "encoding": {
+            "size": {
+              "field": "Pax_Total",
+              "type": "quantitative",
+              "scale": {"domain": [0, 500000]}
+            },
+            "color": {
+              "field": "Pax_In",
+              "type": "quantitative",
+              "scale": {"scheme": "reds", "domain": [0, 2000000]}
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "config": {}
+}
