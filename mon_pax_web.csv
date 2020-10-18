@@ -1,4 +1,4 @@
-AIRPORT,Year,Month,Dom_Pax_In,Dom_Pax_Out,Dom_Pax_Total,Int_Pax_In,Int_Pax_Out,Int_Pax_Total,Pax_In,Pax_Out,Pax_Total,Latitude,Longitude
+AIRPORT,Year,Month,Dom_Pax_In,Dom_Pax_Out,Dom_Pax_Total,Int_Pax_In,Int_Pax_Out,Int_Pax_Total,Pax_In,Pax_Out,Pax_Total,latitude,longitude
 ADELAIDE,2007,12,251898,254717,506615,20782,24156,44938,272680,278873,551553,-34.9462,138.5332
 ALICE SPRINGS,2007,12,21739,24479,46218,0,0,0,21739,24479,46218,-23.8016,133.9035
 BALLINA,2007,12,14994,14375,29369,0,0,0,14994,14375,29369,-28.8351,153.5596
